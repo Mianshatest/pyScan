@@ -21,8 +21,8 @@ ______ ___.__./   _____/ ____ _____    ____
 |  |_> >___  |/        \  \___ / __ \|   |  \
 |   __// ____/_______  /\___  >____  /___|  /
 |__|   \/            \/     \/     \/     \/ 
-
-
+                    
+                                by:流云
     """)
 
 
@@ -33,7 +33,7 @@ def parser_error(errmsg):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(epilog='\tExample: \r\npython ' + sys.argv[0] + " -ip 127.0.0.1")
+    parser = argparse.ArgumentParser(epilog='\tExample: \r\npython3 ' + sys.argv[0] + " -ip 127.0.0.1")
     parser.error = parser_error
     parser._optionals.title = "OPTIONS"
     parser.add_argument('-ip', help="目标ip最大支持B段,支持格式：127.0.0.1;127.0.0.0/24;127.0.0.1-110", default=True)
